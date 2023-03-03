@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
 export class HomePage {
 
   constructor() {}
-
+  slideOpts = {
+    direction: 'horizontal',
+    autoplay:true,
+    
+  };
 }

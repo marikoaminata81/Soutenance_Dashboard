@@ -1,9 +1,249 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Produit</ion-title>
-  </ion-toolbar>
+<ion-header >
+  
+  <section class="header">
+    <div class="logo">
+        <i class="ri-menu-line icon icon-0 menu"></i>
+        <h2 style="color: #E88441;"><ion-img src="../../assets/Logo1.png" style="height:80px; width: 80px; bottom: 1%; margin-left: 40%;"></ion-img></h2>
+    </div>
+    <div class="search--notification--profile">
+        <div class="search">
+            <!-- <input type="text" placeholder="Search Scdule..">
+            <button><i class="ri-search-2-line"></i></button> -->
+        </div>
+        <div class="notification--profile">
+            <!-- <div class="picon lock">
+                <i class="ri-lock-line"></i>
+            </div>
+            <div class="picon bell">
+                <i class="ri-notification-2-line"></i>
+            </div> -->
+            <div class="picon chat">
+                <p>admin admin</p>
+            </div>
+            <div class="picon profile">
+                
+                <img src="profile.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
 </ion-header>
 
-<ion-content>
+<ion-content>  
+<body>
+ 
 
-</ion-content>
+  
+  
+      <div class="sidebar">
+          <ul class="sidebar--items">
+              <a routerLink="/home" >
+                  <span class="icon icon-8"><i class="ri-logout-box-r-line"></i></span>
+                  <span class="sidebar--item">Acceuil</span>
+              </a>
+              <li>
+                  <a routerLink="/profil">
+                      <span class="icon icon-8"><i class="ri-calendar-2-line"></i></span>
+                      <span class="sidebar--item">Profil</span>
+                  </a>
+              </li>
+              <li>
+                  <a routerLink="/produit"id="active--link">
+                      <span class="icon icon-8"><i class="ri-user-2-line"></i></span>
+                      <span class="sidebar--item" style="white-space: nowrap;">Produits</span>
+                  </a>
+              </li>
+              <li>
+                  <a routerLink="/option-utilisateur">
+                      <span class="icon icon-8"><i class="ri-user-line"></i></span>
+                      <span class="sidebar--item">Utilisateurs</span>
+                  </a>
+              </li>
+              <li>
+                   <a routerLink="/option-activite">
+                    <span class="icon icon-8"><i class="ri-logout-box-r-line"></i></span>
+                    <span class="sidebar--item">Activitées</span>
+                </a>
+              </li>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+              <li>
+                <a href="#" id="active--link">
+                    <span class="icon icon-8"><i class="ri-logout-box-r-line"></i></span>
+                    <span class="sidebar--item">Deconnexion</span>
+                </a>
+            </li>
+          </ul>
+          
+      </div>
+      <div class="main--content">
+          <div class="overview">
+              <div class="title">
+                  <h2 class="section--title">Statistique</h2>
+                  <!-- <select name="date" id="date" class="dropdown">
+                      <option value="today">Aujourd'hui</option>
+                      <option value="lastweek">Semaine Dernière</option>
+                      <option value="lastmonth">Mois Dernier</option>
+                      <option value="lastyear">L'année dernière</option>
+                      <option value="alltime">Tous</option>
+                  </select> -->
+              </div>
+              <div class="cards">
+                  <div class="card card-1">
+                      <div class="card--data">
+                          <div class="card--content">
+                              <h5 class="card--title">Nombre de Produits soumis</h5>
+                              <h1>152</h1>
+                          </div>
+                          <i class="ri-user-2-line card--icon--lg"></i>
+                      </div>
+                      <div class="card--stats">
+                          <!-- <span><i class="ri-bar-chart-fill card--icon stat--icon"></i>65%</span> -->
+                          <!-- <span><i class="ri-arrow-up-s-fill card--icon up--arrow"></i>10</span>
+                          <span><i class="ri-arrow-down-s-fill card--icon down--arrow"></i>2</span> -->
+                      </div>
+                  </div>
+                  <div class="card card-2">
+                      <div class="card--data">
+                          <div class="card--content">
+                              <h5 class="card--title">Nombre de Produits postés</h5>
+                              <h1>1145</h1>
+                          </div>
+                          <i class="ri-user-line card--icon--lg"></i>
+                      </div>
+                      <div class="card--stats">
+                          <!-- <span><i class="ri-bar-chart-fill card--icon stat--icon"></i>82%</span> -->
+                          <!-- <span><i class="ri-arrow-up-s-fill card--icon up--arrow"></i>230</span>
+                          <span><i class="ri-arrow-down-s-fill card--icon down--arrow"></i>45</span> -->
+                      </div>
+                  </div>
+                  <div class="card card-3">
+                      <div class="card--data">
+                          <div class="card--content">
+                              <h5 class="card--title">Nombre de Produits refusés</h5>
+                              <h1>15</h1>
+                          </div>
+                          <i class="ri-calendar-2-line card--icon--lg"></i>
+                      </div>
+                      <div class="card--stats">
+                          <!-- <span><i class="ri-bar-chart-fill card--icon stat--icon"></i>27%</span> -->
+                          <!-- <span><i class="ri-arrow-up-s-fill card--icon up--arrow"></i>31</span>
+                          <span><i class="ri-arrow-down-s-fill card--icon down--arrow"></i>23</span> -->
+                      </div>
+                  </div>
+                  <div class="card card-4">
+                      <div class="card--data">
+                          <div class="card--content">
+                              <h5 class="card--title">Nombre de Produits en attente</h5>
+                              <h1>102</h1>
+                          </div>
+                          <i class="ri-hotel-bed-line card--icon--lg"></i>
+                      </div>
+                      <div class="card--stats">
+                          <!-- <span><i class="ri-bar-chart-fill card--icon stat--icon"></i>8%</span> -->
+                          <!-- <span><i class="ri-arrow-up-s-fill card--icon up--arrow"></i>11</span>
+                          <span><i class="ri-arrow-down-s-fill card--icon down--arrow"></i>2</span> -->
+                      </div>
+                  </div>
+              </div>
+            </div>
+
+
+            <div class="container-fluid">
+ 
+              <div class="row flex-nowrap">
+                <div class="col-auto px-2">
+                </div>
+                
+                <main class="col ps-md-2 pt-2  " style=" height: 100vh ;">
+            
+                  <div class="container">
+                   
+                    <br>
+                    <div class="row ro py-3">
+                      
+                      <h1>Liste des produits</h1>
+                      <div class="trait"></div>
+                      <div class="position">
+                        
+                        <form action="">
+                          <button class="btn btnAjouter recherche" style="display:flex ;"><i class="bi bi-search py-1"></i> <input
+                              type="text" style="border: hidden; border: 0; background: transparent;" name="searchText"
+                              placeholder="Rechercher"></button>
+                        </form>
+            
+                        
+            
+                        <!-- <a href="ajout-user"> <button class="btn btnAjouter1"> Ajouter un utilisateur </button></a>
+                     --> </div> 
+                      <div class="table-responsive ra py-5">
+                        <table class="table" id="season-tble">
+                          <thead>
+                            <tr>
+                              <th scope="col" class="ra">N°</th>
+                              <th scope="col">Nom</th>
+                              <th scope="col">Prix</th>
+                              <th scope="col">Date de Fabrication</th>
+                              <th scope="col">Date de péremption</th>
+                              <th scope="col">Auteur</th>
+                              <th scope="col">Etat</th>
+                              <th scope="col" class="ra1">Action</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td scope="row">aaaaaaa</td>
+                              <td scope="">aaaaaaa</td>
+                              <td>aaaaaaa</td>
+                              <td>aaaaaaa</td>
+                              <td>aaaaaaa</td>
+                              <td>aaaaaaa</td>
+                              <td>aaaaaaa</td>
+                              <td><i class="bi bi-pencil-square i" [routerLink]=""></i>&nbsp; &nbsp; &nbsp; <button><i
+                                    class="bi bi-trash-fill i"></i></button></td>
+                            </tr>
+                            <!-- (click)="supprimer(user)" -->
+                          </tbody>
+                        </table>
+                     </div>
+            
+                    </div>
+                  </div>
+            
+            
+            
+                </main>
+              </div>
+            </div>
+            
+            <ng-template #erreur id="#erreur">
+              <div class="img" align="center">
+                <div class="">
+                  <img src="../../assets/images/errors.jpg" width="30%">
+                </div>
+                <div>
+                  <button style="font-size:20px;">Veuillez vous <a href="login" class=" btn">connecter</a></button>
+                  <style>
+                    .img button a:hover {
+                      background-color: black;
+                      border: 2px solid #E88441;
+                      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+                      color: white;
+                    }
+            
+                    .img button a {
+                      background-color: #E88441;
+                      text-decoration: none;
+                    }
+                  </style>
+                </div>
+              </div>
+            </ng-template>
+                  
+            </div>

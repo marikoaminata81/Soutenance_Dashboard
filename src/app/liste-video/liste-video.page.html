@@ -43,7 +43,7 @@
                   <span class="sidebar--item">Acceuil</span>
               </a>
               <li>
-                  <a routerLink="/profil" id="active--link">
+                  <a routerLink="/profil">
                       <span class="icon icon-8"><i class="ri-calendar-2-line"></i></span>
                       <span class="sidebar--item">Profil</span>
                   </a>
@@ -61,7 +61,7 @@
                   </a>
               </li>
               <li>
-                   <a routerLink="/option-activite">
+                   <a routerLink="/option-activite"id="active--link">
                     <span class="icon icon-8"><i class="ri-logout-box-r-line"></i></span>
                     <span class="sidebar--item">Activitées</span>
                 </a>
@@ -84,79 +84,73 @@
       </div>
       <div class="main--content">
 
+
+
 <div class="container-fluid">
+ 
   <div class="row flex-nowrap">
-    <div class="col-auto px-2" >
+    <div class="col-auto px-2">
     </div>
+    
     <main class="col ps-md-2 pt-2  " style=" height: 100vh ;">
 
-      <ion-content>
-        <ion-card style="">
-        <div class="container">
-          <div class="row boxShadow">
-            <!------------- Colonne Gauche---->
-            <div class="col-12 col-md-2 imgGauche">
-              <ion-card style="border-radius: 50%; margin-left: 10%; height: 28%;">
-                
-                <img style="height: 100%; width: 100%;" src="../../assets/Logo1.png" alt="image user" class="img-fluid rounded">
-             
-            </ion-card>
-              <p class="profileName">Ousmane <b>TOURE</b></p>
+      <div class="container">
+        <ion-button fill="transparent" (click)="Back()">
+          <ion-icon name="arrow-back-sharp" style="color: #E88441;"></ion-icon>
+        </ion-button>
+        <br>
+        <div class="row ro py-3">
+          
+          <h1>Liste des Vidéos</h1>
+          <div class="trait"></div>
+          <div class="position">
+            
+            <form action="">
+              <button class="btn btnAjouter recherche" style="display:flex ;"><i class="bi bi-search py-1"></i> <input
+                  type="text" style="border: hidden; border: 0; background: transparent;" name="searchText"
+                  placeholder="Rechercher"></button>
+            </form>
 
-              <div class="row">
-                <p class="py-3" class="titleProfilSettings">
-                  <ion-icon name="cog-outline" class="bi bi-gear"> </ion-icon> Compte</p>
-                <!-- <p class="py-3" class="titleProfilSettings2"><i class="bi bi-lock-fill"></i> Mots de passe</p> -->  </div> 
-
-            </div>
-
-            <!------------- Colonne Droite ---->
-            <div class="col-12 col-md-10">
-              <form>
-                <fieldset>
-                  <legend class="display-6"><b style="color: black;">Paramètres du profil</b></legend>
-                </fieldset>
-                <div class="trait"></div>
-                <div class="row col-12">
-                  <div class="mb-3 col-12 col-md-6 form-row ">
-                    <label for="name">Nom</label>
-
-                    <input type="text" name="name" id="name" value="TOURE" class="form form-control inputvalue">
-                  </div>
-                  <div class="mb-3 col-12 col-md-6 form-row ">
-                    <label for="firstname">Prénom</label>
-                    <input type="text" name="firstname" id="firstname" value="Ousmane"
-                      class="form form-control inputvalue">
-                  </div>
-                  <div class="mb-3 col-12 col-md-6 form-row ">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" value="Toure@orangemali.com"
-                      class="form form-control inputvalue">
-                  </div>
-                  <div class="mb-3 col-12 col-md-6 form-row ">
-                    <label for="num">Numéro</label>
-                    <input type="text" name="num" id="num" value="74674384" class="form form-control inputvalue">
-                  </div>
-                  <div class="mb-3 col-12 col-md-6 form-row ">
-                    <label for="num">Role</label>
-                    <input type="text" name="num" id="num" value="Administrateur" class="form form-control inputvalue"
-                      disabled>
-                  </div>
-                </div>
-                <div>
-                  <button class="btn btnAjouter">Enregistrer</button>
-                  <button class="btn btnAjouter1">Annuler</button>
-                </div>
-
-
-
-              </form>
-
-            </div>
+            
+            <button class="btn btnAjouter c1">Filtré par entité <i class="bi bi-filter-right"></i></button>
+            <!-- <a href="ajout-user"> <button class="btn btnAjouter1"> Ajouter un utilisateur </button></a> -->
           </div>
+          <div class="table-responsive ra py-5">
+            <table class="table" id="season-tble">
+              <thead>
+                <tr>
+                  <th scope="col" class="ra">N°</th>
+                  <th scope="col">Nom</th>
+                  <th scope="col">Prénom</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Numéro</th>
+                  <th scope="col">Rôle</th>
+                  <th scope="col">Entité</th>
+                  <th scope="col" class="ra1">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td scope="row">aaaaaaa</td>
+                  <td scope="">aaaaaaa</td>
+                  <td>aaaaaaa</td>
+                  <td>aaaaaaa</td>
+                  <td>aaaaaaa</td>
+                  <td>aaaaaaa</td>
+                  <td>aaaaaaa</td>
+                  <td><i class="bi bi-pencil-square i" [routerLink]=""></i>&nbsp; &nbsp; &nbsp; <button><i
+                        class="bi bi-trash-fill i"></i></button></td>
+                </tr>
+                <!-- (click)="supprimer(user)" -->
+              </tbody>
+            </table>
+         </div>
+
         </div>
-        </ion-card>
-      </ion-content>
+      </div>
+
+
+
     </main>
   </div>
 </div>
@@ -171,13 +165,13 @@
       <style>
         .img button a:hover {
           background-color: black;
-          border: 2px solid #ff6600;
+          border: 2px solid #E88441;
           box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
           color: white;
         }
 
         .img button a {
-          background-color: #ff6600;
+          background-color: #E88441;
           text-decoration: none;
         }
       </style>

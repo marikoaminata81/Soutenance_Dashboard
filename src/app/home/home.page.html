@@ -3,7 +3,7 @@
     <section class="header">
       <div class="logo">
           <i class="ri-menu-line icon icon-0 menu"></i>
-          <h2 style="color: #E88441;"><ion-img src="../../assets/Logo1.png" style="height:100px; width: 100px;"></ion-img></h2>
+          <h2 style="color: #E88441;"><ion-img src="../../assets/Logo1.png" style="height:80px; width: 80px; bottom: 1%; margin-left: 40%;"></ion-img></h2>
       </div>
       <div class="search--notification--profile">
           <div class="search">
@@ -35,41 +35,37 @@
    
   
     
-    <section class="main">
+    
         <div class="sidebar">
             <ul class="sidebar--items">
+                <a routerLink="/home" id="active--link">
+                    <span class="icon icon-8"><i class="ri-logout-box-r-line"></i></span>
+                    <span class="sidebar--item">Acceuil</span>
+                </a>
                 <li>
-                    <a href="#" id="active--link">
-                        <span class="icon icon-1"><i class="ri-layout-grid-line"></i></span>
-                        <span class="sidebar--item"><h2>Acceuil</h2></span>
+                    <a routerLink="/profil">
+                        <span class="icon icon-8"><i class="ri-calendar-2-line"></i></span>
+                        <span class="sidebar--item">Profil</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <span class="icon icon-2"><i class="ri-calendar-2-line"></i></span>
-                        <span class="sidebar--item"><h2>Profil</h2></span>
+                    <a routerLink="/produit">
+                        <span class="icon icon-8"><i class="ri-user-2-line"></i></span>
+                        <span class="sidebar--item" style="white-space: nowrap;">Produits</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <span class="icon icon-3"><i class="ri-user-2-line"></i></span>
-                        <span class="sidebar--item" style="white-space: nowrap;"><h2>Produits Soumis</h2></span>
+                    <a routerLink="/option-utilisateur">
+                        <span class="icon icon-8"><i class="ri-user-line"></i></span>
+                        <span class="sidebar--item">Utilisateurs</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <span class="icon icon-4"><i class="ri-user-line"></i></span>
-                        <span class="sidebar--item"><h2>Utilisateurs</h2></span>
-                    </a>
+                     <a routerLink="/option-activite">
+                      <span class="icon icon-8"><i class="ri-logout-box-r-line"></i></span>
+                      <span class="sidebar--item">Activitées</span>
+                  </a>
                 </li>
-                <li>
-                    <a href="#">
-                        <span class="icon icon-5"><i class="ri-line-chart-line"></i></span>
-                        <span class="sidebar--item"><h2>Activitées</h2> </span>
-                    </a>
-                </li>
-              <br>
-              <br>
               <br>
               <br>
               <br>
@@ -89,14 +85,14 @@
         <div class="main--content">
             <div class="overview">
                 <div class="title">
-                    <h2 class="section--title">Aperçu</h2>
-                    <select name="date" id="date" class="dropdown">
+                    <h2 class="section--title">Statistique</h2>
+                    <!-- <select name="date" id="date" class="dropdown">
                         <option value="today">Aujourd'hui</option>
                         <option value="lastweek">Semaine Dernière</option>
                         <option value="lastmonth">Mois Dernier</option>
                         <option value="lastyear">L'année dernière</option>
                         <option value="alltime">Tous</option>
-                    </select>
+                    </select> -->
                 </div>
                 <div class="cards">
                     <div class="card card-1">
@@ -108,7 +104,7 @@
                             <i class="ri-user-2-line card--icon--lg"></i>
                         </div>
                         <div class="card--stats">
-                            <span><i class="ri-bar-chart-fill card--icon stat--icon"></i>65%</span>
+                            <!-- <span><i class="ri-bar-chart-fill card--icon stat--icon"></i>65%</span> -->
                             <!-- <span><i class="ri-arrow-up-s-fill card--icon up--arrow"></i>10</span>
                             <span><i class="ri-arrow-down-s-fill card--icon down--arrow"></i>2</span> -->
                         </div>
@@ -122,7 +118,7 @@
                             <i class="ri-user-line card--icon--lg"></i>
                         </div>
                         <div class="card--stats">
-                            <span><i class="ri-bar-chart-fill card--icon stat--icon"></i>82%</span>
+                            <!-- <span><i class="ri-bar-chart-fill card--icon stat--icon"></i>82%</span> -->
                             <!-- <span><i class="ri-arrow-up-s-fill card--icon up--arrow"></i>230</span>
                             <span><i class="ri-arrow-down-s-fill card--icon down--arrow"></i>45</span> -->
                         </div>
@@ -131,12 +127,12 @@
                         <div class="card--data">
                             <div class="card--content">
                                 <h5 class="card--title">Nombres de commandes</h5>
-                                <h1>102</h1>
+                                <h1>15</h1>
                             </div>
                             <i class="ri-calendar-2-line card--icon--lg"></i>
                         </div>
                         <div class="card--stats">
-                            <span><i class="ri-bar-chart-fill card--icon stat--icon"></i>27%</span>
+                            <!-- <span><i class="ri-bar-chart-fill card--icon stat--icon"></i>27%</span> -->
                             <!-- <span><i class="ri-arrow-up-s-fill card--icon up--arrow"></i>31</span>
                             <span><i class="ri-arrow-down-s-fill card--icon down--arrow"></i>23</span> -->
                         </div>
@@ -144,137 +140,203 @@
                     <div class="card card-4">
                         <div class="card--data">
                             <div class="card--content">
-                                <h5 class="card--title">Utilisateurs Bannis</h5>
-                                <h1>15</h1>
+                                <h5 class="card--title">Nombre de produits postés</h5>
+                                <h1>102</h1>
                             </div>
                             <i class="ri-hotel-bed-line card--icon--lg"></i>
                         </div>
                         <div class="card--stats">
-                            <span><i class="ri-bar-chart-fill card--icon stat--icon"></i>8%</span>
+                            <!-- <span><i class="ri-bar-chart-fill card--icon stat--icon"></i>8%</span> -->
                             <!-- <span><i class="ri-arrow-up-s-fill card--icon up--arrow"></i>11</span>
                             <span><i class="ri-arrow-down-s-fill card--icon down--arrow"></i>2</span> -->
                         </div>
                     </div>
                 </div>
             </div>
+    
+
             <div class="doctors">
                 <div class="title">
                     <h2 class="section--title">Produits </h2>
                     <div class="doctors--right--btns">
                         <select name="date" id="date" class="dropdown doctor--filter">
                             <option >Filter</option>
-                            <option value="free">1</option>
-                            <option value="scheduled">2</option>
+                            <option value="free">Poster</option>
+                            <option value="scheduled">En attente</option>
+                            <option value="scheduled">Rejeté</option>
                         </select>
-                        <button class="add"><i class="ri-add-line"></i>Ajouter Produit </button>
+                        <button routerLink="/produit" class="add"><i class="ri-add-line"></i>Evaluer un Produit </button>
                     </div>
                 </div>
-                <div class="doctors--cards">
-                    <a href="#" class="doctor--card">
-                        <div class="img--box--cover">
-                            <div class="img--box">
-                                <img src="assets/images/doctor1.jpg" alt="">
-                            </div>
+                
+                
+                <ion-slides [options]="slideOpts" pager="true" >
+                    <ion-slide>
+                        <div class="doctors--cards">
+                            <a href="#" class="doctor--card">
+                                <div class="img--box--cover">
+                                    <div class="img--box">
+                                        <img src="../../assets/gastro3.jpg" alt="">
+                                    </div>
+                                </div>
+                                <p class="free">Poster</p>
+                            </a>
+                            <a href="#" class="doctor--card">
+                                <div class="img--box--cover">
+                                    <div class="img--box">
+                                        <img src="../../assets/gastro4.jpg" alt="">
+                                    </div>
+                                </div>
+                                <p class="scheduled">En attente</p>
+                            </a>
+                            <a href="#" class="doctor--card">
+                                <div class="img--box--cover">
+                                    <div class="img--box">
+                                        <img src="../../assets/gastro5.jpg" alt="">
+                                    </div>
+                                </div>
+                                <p class="scheduled">En attente</p>
+                            </a>
+                            <a href="#" class="doctor--card">
+                                <div class="img--box--cover">
+                                    <div class="img--box">
+                                        <img src="../../assets/gastro6.jpg" alt="">
+                                    </div>
+                                </div>
+                                <p class="free">Poster</p>
+                            </a>
+                            <a href="#" class="doctor--card">
+                                <div class="img--box--cover">
+                                    <div class="img--box">
+                                        <img src="../../assets/gastro7.jpg" alt="">
+                                    </div>
+                                </div>
+                                <p class="scheduled">En attente</p>
+                            </a>
+                            <a href="#" class="doctor--card">
+                                <div class="img--box--cover">
+                                    <div class="img--box">
+                                        <img src="../../assets/ginger-juice.jpg" alt="">
+                                    </div>
+                                </div>
+                                <p class="free">Poster</p>
+                            </a>
+                            <a href="#" class="doctor--card">
+                                <div class="img--box--cover">
+                                    <div class="img--box">
+                                        <img src="../../assets/pexels-photo-128402.jpeg" alt="">
+                                    </div>
+                                </div>
+                                <p class="scheduled">En attente</p>
+                            </a>
                         </div>
-                        <p class="free">Poster</p>
-                    </a>
-                    <a href="#" class="doctor--card">
-                        <div class="img--box--cover">
-                            <div class="img--box">
-                                <img src="assets/images/doctor2.jpg" alt="">
-                            </div>
+                    </ion-slide>
+
+
+                    <ion-slide>
+                        <div class="doctors--cards">
+                            <a href="#" class="doctor--card">
+                                <div class="img--box--cover">
+                                    <div class="img--box">
+                                        <img src="../../assets/gastro3.jpg" alt="">
+                                    </div>
+                                </div>
+                                <p class="free">Poster</p>
+                            </a>
+                            <a href="#" class="doctor--card">
+                                <div class="img--box--cover">
+                                    <div class="img--box">
+                                        <img src="../../assets/gastro4.jpg" alt="">
+                                    </div>
+                                </div>
+                                <p class="scheduled">En attente</p>
+                            </a>
+                            <a href="#" class="doctor--card">
+                                <div class="img--box--cover">
+                                    <div class="img--box">
+                                        <img src="../../assets/gastro5.jpg" alt="">
+                                    </div>
+                                </div>
+                                <p class="scheduled">En attente</p>
+                            </a>
+                            <a href="#" class="doctor--card">
+                                <div class="img--box--cover">
+                                    <div class="img--box">
+                                        <img src="../../assets/gastro6.jpg" alt="">
+                                    </div>
+                                </div>
+                                <p class="free">Poster</p>
+                            </a>
+                            <a href="#" class="doctor--card">
+                                <div class="img--box--cover">
+                                    <div class="img--box">
+                                        <img src="../../assets/gastro7.jpg" alt="">
+                                    </div>
+                                </div>
+                                <p class="scheduled">En attente</p>
+                            </a>
+                            <a href="#" class="doctor--card">
+                                <div class="img--box--cover">
+                                    <div class="img--box">
+                                        <img src="../../assets/ginger-juice.jpg" alt="">
+                                    </div>
+                                </div>
+                                <p class="free">Poster</p>
+                            </a>
+                            <a href="#" class="doctor--card">
+                                <div class="img--box--cover">
+                                    <div class="img--box">
+                                        <img src="../../assets/pexels-photo-128402.jpeg" alt="">
+                                    </div>
+                                </div>
+                                <p class="scheduled">En attente</p>
+                            </a>
                         </div>
-                        <p class="scheduled">En attente</p>
-                    </a>
-                    <a href="#" class="doctor--card">
-                        <div class="img--box--cover">
-                            <div class="img--box">
-                                <img src="assets/images/doctor3.jpg" alt="">
-                            </div>
-                        </div>
-                        <p class="scheduled">En attente</p>
-                    </a>
-                    <a href="#" class="doctor--card">
-                        <div class="img--box--cover">
-                            <div class="img--box">
-                                <img src="assets/images/doctor4.jpg" alt="">
-                            </div>
-                        </div>
-                        <p class="free">Poster</p>
-                    </a>
-                    <a href="#" class="doctor--card">
-                        <div class="img--box--cover">
-                            <div class="img--box">
-                                <img src="assets/images/doctor5.jpg" alt="">
-                            </div>
-                        </div>
-                        <p class="scheduled">En attente</p>
-                    </a>
-                    <a href="#" class="doctor--card">
-                        <div class="img--box--cover">
-                            <div class="img--box">
-                                <img src="assets/images/doctor6.jpg" alt="">
-                            </div>
-                        </div>
-                        <p class="free">Poster</p>
-                    </a>
-                    <a href="#" class="doctor--card">
-                        <div class="img--box--cover">
-                            <div class="img--box">
-                                <img src="assets/images/doctor7.jpg" alt="">
-                            </div>
-                        </div>
-                        <p class="scheduled">En attente</p>
-                    </a>
-                </div>
+                    </ion-slide>
+                </ion-slides>
             </div>
             <div class="recent--patients">
                 <div class="title">
-                    <h2 class="section--title">Utilisateurs</h2>
-                    <button class="add"><i class="ri-add-line"></i>Ajouter un utilisateurs</button>
+                    <h2 class="section--title">Informations de l'Administrateur Connecté</h2>
+                    <button class="add" routerLink="/ajout-user"><i class="ri-add-line"></i>Ajouter un utilisateurs</button>
                 </div>
-                <div class="table" style="width: calc(100% + 22px);">
+                <div class="table" >
                     <table>
                         <thead>
                             <tr>
                                 <th>Nom</th>
-                                <th>Date</th>
-                                <th>Status</th>
+                                <th>Prénom</th>
+                                <th>Username</th>
+                                <th>Numéro</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Cameron Williamson</td>
-                                <td>30/07/2022</td>
-                                <td class="pending">Actif</td>
-                                <td><span><i class="ri-edit-line edit"></i><i class="ri-delete-bin-line delete"></i></span></td>
+                                <td>Admin</td>
+                                <td>Admin</td>
+                                <td class="pending">Admin07</td>
+                                <td>70562633</td>
+                                <td><ion-button><ion-icon name="add-circle"></ion-icon></ion-button></td>
                             </tr>
-                            <tr>
-                                <td>Cameron Williamson</td>
-                                <td>30/07/2022</td>
-                                <td class="pending">Actif</td>
-                                <td><span><i class="ri-edit-line edit"></i><i class="ri-delete-bin-line delete"></i></span></td>
-                            </tr>
-                            <tr>
-                                <td>Cameron Williamson</td>
-                                <td>30/07/2022</td>
-                                <td class="pending">Actif</td>
-                                <td><span><i class="ri-edit-line edit"></i><i class="ri-delete-bin-line delete"></i></span></td>
-                            </tr>
-                            <!-- <tr>
-                                <td>Cameron Williamson</td>
-                                <td>30/07/2022</td>
-                                <td class="pending">Actif</td>
-                                <td><span><i class="ri-edit-line edit"></i><i class="ri-delete-bin-line delete"></i></span></td>
-                            </tr>
-                             -->
+                           
+                           
+                            
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
-    </section>
+        <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+   
     
 </body>
 </ion-content>

@@ -1,0 +1,201 @@
+<ion-header >
+  
+  <section class="header">
+    <div class="logo">
+        <i class="ri-menu-line icon icon-0 menu"></i>
+        <h2 style="color: #E88441;"><ion-img src="../../assets/Logo1.png" style="height:80px; width: 80px; bottom: 1%; margin-left: 40%;"></ion-img></h2>
+    </div>
+    <div class="search--notification--profile">
+        <div class="search">
+            <!-- <input type="text" placeholder="Search Scdule..">
+            <button><i class="ri-search-2-line"></i></button> -->
+        </div>
+        <div class="notification--profile">
+            <!-- <div class="picon lock">
+                <i class="ri-lock-line"></i>
+            </div>
+            <div class="picon bell">
+                <i class="ri-notification-2-line"></i>
+            </div> -->
+            <div class="picon chat">
+                <p>admin admin</p>
+            </div>
+            <div class="picon profile">
+                
+                <img src="profile.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+</ion-header>
+
+<ion-content>  
+<body>
+ 
+
+  
+  
+      <div class="sidebar">
+          <ul class="sidebar--items">
+            <a routerLink="/home" >
+                  <span class="icon icon-8"><i class="ri-logout-box-r-line"></i></span>
+                  <span class="sidebar--item">Acceuil</span>
+              </a>
+              <li>
+                  <a routerLink="/profil">
+                      <span class="icon icon-8"><i class="ri-calendar-2-line"></i></span>
+                      <span class="sidebar--item">Profil</span>
+                  </a>
+              </li>
+              <li>
+                  <a routerLink="/produit">
+                      <span class="icon icon-8"><i class="ri-user-2-line"></i></span>
+                      <span class="sidebar--item" style="white-space: nowrap;">Produits</span>
+                  </a>
+              </li>
+              <li>
+                  <a routerLink="/option-utilisateur"id="active--link">
+                      <span class="icon icon-8"><i class="ri-user-line"></i></span>
+                      <span class="sidebar--item">Utilisateurs</span>
+                  </a>
+              </li>
+              <li>
+                   <a routerLink="/option-activite">
+                    <span class="icon icon-8"><i class="ri-logout-box-r-line"></i></span>
+                    <span class="sidebar--item">Activitées</span>
+                </a>
+              </li>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+              <li>
+                <a href="#" id="active--link">
+                    <span class="icon icon-8"><i class="ri-logout-box-r-line"></i></span>
+                    <span class="sidebar--item">Deconnexion</span>
+                </a>
+            </li>
+          </ul>
+          
+      </div>
+      <div class="main--content">
+        <div class="container-fluid ">
+   
+          <div class="row flex-nowrap">
+            <div class="col-auto px-2">
+            </div>
+            <main class="col ps-md-2 pt-2  " style=" height: 100vh ;">
+              
+              <div class="container">
+                <div class="row boxShadow">
+        
+                  
+                  <!------------- Colonne Droite ---->
+                  <div class="col-12 col-md-16">
+                    <ion-button fill="transparent" (click)="Back()">
+                      <ion-icon name="arrow-back-sharp" style="color: #E88441;"></ion-icon>
+                    </ion-button>
+                   
+                    <form>
+                      <fieldset>
+                        <legend class="display-6 text-center my-3"><b>Ajouter un utilisateur</b></legend>
+                      </fieldset>
+                      <div class="trait"></div>
+                      <div class="row col-12">
+                        
+                        <div class="mb-3 col-12 col-md-6 form-row form-floating">
+                          <input type="text" name="nom" id="nom" placeholder="Nom" class="form form-control inputvalue">
+                          <label for="nom">Nom</label>
+                        </div>
+        
+                        <div class="mb-3 col-12 col-md-6 form-row form-floating">
+                          <input type="text" name="prenom" id="prenom" placeholder="Prénom" class="form form-control inputvalue">
+                          <label for="prenom">Prénom</label>
+                        </div>
+                        <div class="mb-3 col-12 col-md-6 form-row form-floating">
+                          <input type="email" name="email" id="email" placeholder="Email" class="form form-control inputvalue">
+                          <label for="email">Email</label>
+                        </div>
+        
+                        <div class="mb-3 col-12 col-md-6 form-row form-floating">
+                          <input type="text" name="username" id="username" placeholder="Nom d'utilisateur" class="form form-control inputvalue">
+                          <label for="username">Nom d'utilisateur</label>
+                        </div>
+                        <div class="mb-3 col-12 col-md-6 form-row form-floating">
+                          <input type="text" name="numero" id="numero" placeholder="Numéro" class="form form-control inputvalue">
+                          <label for="num">Numéro</label>
+                        </div>
+        
+                        <div class="mb-3 col-12 col-md-6 form-row form-floating">
+                          <input type="text" name="password" id="password" placeholder="Mot de Passe" class="form form-control inputvalue">
+                          <label for="password">Mot de Passe</label>
+                        </div>
+                        <div class="mb-3 col-12 col-md-6 form-row form-floating">
+                          <input type="text" name="adresse" id="adresse" placeholder="Adresse" class="form form-control inputvalue">
+                          <label for="adresse">Adresse</label>
+                        </div>
+                        <div class="mb-3 col-12 col-md-6 form-row form-floating">
+                          <ion-list>
+                            <ion-item>
+                              <ion-select placeholder="Attribuer un role à l'utilisateur">
+                                <ion-select-option value="apples">Role_Admin</ion-select-option>
+                                <ion-select-option value="oranges">Role_User</ion-select-option>
+                                
+                              </ion-select>
+                            </ion-item>
+                          </ion-list>
+                        </div>
+        
+                      </div>
+                      <button class="btn btnAjouter">Ajouter</button>
+        <br>
+        
+                    </form>
+        <div class="personne">
+          <img style="height: 60%;width:10%;margin-top: 15%;margin-left:-20px;" src="../../assets/Rectangle 375.png" alt="" srcset="">
+          <img style="height: 35%;width:10%;margin-top: 30%;margin-left:90%;" src="../../assets/Rectangle 376.png" alt="" srcset="">
+        </div>
+                  </div>
+                </div>
+               
+              </div>
+            </main>
+          </div>
+        </div>
+        
+        
+        <ng-template #erreur id="#erreur">
+          <div class="img" align="center">
+            <div class="">
+              <img src="../../assets/images/errors.jpg" width="30%">
+            </div>
+            <div>
+              <button style="font-size:20px;">Veuillez vous <a href="login" class=" btn">connecter</a></button>
+              <style>
+                .img button a:hover {
+                  background-color: black;
+                  border: 2px solid #ff6600;
+                  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+                  color: white;
+                }
+        
+                .img button a {
+                  background-color: #ff6600;
+                  text-decoration: none;
+                }
+              </style>
+            </div>
+          </div>
+        </ng-template>
+      </div>
+
+
+
+
+
+
+

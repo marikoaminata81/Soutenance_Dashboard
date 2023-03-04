@@ -15,7 +15,9 @@
   
       <!------------- Colonne Droite ---->
       <div class="col-12 col-md-6 form">
-        <form class="py-3 px-3">
+        <form name="form"
+        #f="ngForm"
+        (ngSubmit)="f.form.valid && onSubmit()" class="py-3 px-3">
           <fieldset>
             <legend class="display-6 text-center my-3"><b>Connexion</b></legend>
           </fieldset>
@@ -30,12 +32,12 @@
             </div> -->
 
             <div class="mb-3 form-row form-floating">
-              <input type="email" name="email" id="email" placeholder="email" class="form form-control inputvalue" >
-              <label for="email">Email <span style="color: #E88441;">*</span></label>
+              <input type="text" name="username" id="username" placeholder="Nom d'utilisateur" class="form form-control inputvalue"name="username" id="username"  [(ngModel)]="form.username" #username="ngModel" >
+              <label for="username">Nom d'utilisateur<span style="color: #E88441;">*</span></label>
             </div>
 
             <div class="mb-3 form-row form-floating">
-              <input type="password" name="password" id="password" placeholder="Mots de passe *" class="form form-control inputvalue" >
+              <input type="password" name="password" id="password" placeholder="Mots de passe *" class="form form-control inputvalue"name="password" [(ngModel)]="form.password" #password="ngModel" id="password" >
               <label for="password">Mot de passe <span style="color:#E88441;">*</span></label>
               <a href="#" style="color:#E88441; cursor:pointer"> <p class="my-3">Mots de passe <span> oublié </span> ? </p></a>
               
@@ -43,7 +45,7 @@
            
           </div>       
 
-          <button class="btn btnAjouter">Se Connecter</button>
+          <button class="btn btnAjouter" (click)="onSubmit()">Se Connecter</button>
         </form>
   
       </div>
